@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
+  selector: 'pm-root',
+  template:`
+  <div><h1>{{pageTitle}}</h1>
+  <pm-products></pm-products>
+</div>
+  `,
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'DemoApp1';
+  pageTitle:string = 'Acme Product Mangement';
 }
